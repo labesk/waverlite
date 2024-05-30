@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Ubuntu&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* :root {
+  --mirabel-color-01: rgb(235, 245, 251);
+  --mirabel-color-02: #ffffff;
+  --mirabel-color-03: #5c5c5c;
+  --mirabel-color-04: #515151;
+  --mirabel-color-05: rgba(255, 255, 255, 0.48);
+  --mirabel-color-06: rgba(255, 255, 255, 0.64);
+  --mirabel-color-07: rgba(255, 255, 255, 0.8);
+  --mirabel-color-08: rgba(255, 255, 255, 0.92);
+  --mirabel-color-09: rgb(233, 243, 250);
+  --mirabel-color-10: rgba(0, 0, 0, 0.04);
+  --mirabel-color-11: rgba(0, 0, 0, 0.06);
+  --mirabel-color-12: rgba(0, 0, 0, 0.08);
+  --mirabel-color-13: rgba(0, 0, 0, 0.16);
+  --mirabel-color-14: rgba(0, 0, 0, 0.24);
+  --mirabel-color-15: rgba(0, 0, 0, 0.36);
+  --mirabel-color-16: rgba(0, 0, 0, 0.48);
+  --mirabel-color-17: rgba(0, 0, 0, 0.64);
+  --mirabel-color-18: rgba(0, 0, 0, 0.8);
+  --mirabel-color-19: rgba(0, 0, 0, 0.92);
+  --mirabel-color-20: #b0c4d3;
+  --mirabel-color-21: rgb(19, 144, 204);
+  --mirabel-color-22: #0686fd;
+  --mirabel-color-23: #1390cc;
+  --mirabel-color-24: #efc967;
+  --mirabel-color-25: #c93f8f;
+  --mirabel-color-26: #2d9124;
+  --mirabel-color-27: #349161;
+  --mirabel-color-28: #2c4d3c;
+  --mirabel-color-29: #c74f61;
+
+  --mirabel-font-nunito: "Nunito", sans-serif;
+} */
+
+img {
+  width: 100%;
+}
+
+/* SIGNUP PAGE STYLING */
+.signup {
+  background-color: rgb(245, 246, 250);
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  /*  */
+}
+
+.signup_container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  gap: 10px;
+}
+
+.signup_container .signup_logo {
+  align-self: center;
+}
+.signup_container img {
+  width: 10rem;
+  /* margin-top: 3rem; */
+}
+
+.form {
+  width: 30rem;
+  border: 1px solid var(--mirabel-color-10);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mirabel-color-02);
+  padding: 2rem;
+  line-height: 2rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.form .select {
+  text-align: center;
+}
+
+.form .select h4 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--mirabel-color-03);
+  text-transform: none;
+}
+
+.form .select_text {
+  margin-top: 1rem;
+}
+.form .select_text p {
+  font-size: 1rem;
+}
+
+.form .select_text a {
+  color: var(--mirabel-color-23);
+  font-weight: bold;
+}
+
+.form .signup_button_container {
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.form .signup_button_container a {
+  width: 7.5rem;
+  border: 1.5px solid var(--mirabel-color-10);
+  background-color: var(--mirabel-color-02);
+  border-radius: 2px;
+  font-size: 13px;
+  box-shadow: var(--box-shadow);
+}
+
+.form h3 {
+  font-size: 1.5rem;
+  color: var(--mirabel-color-03);
+}
+
+.form p {
+  color: var(--mirabel-color-03);
+}
+
+.signup__footer {
+  background-color: var(--mirabel-color-02);
+}
+
+.footer__container {
+  display: flex;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  height: 4rem;
+}
+
+.footer__container .Policy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+/* 
+  .footer__container .policy  p {
+    color: rgb(139, 154, 176);
+  } */
+
+.privacy__policy {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.privacy__policy span {
+  color: var(--mirabel-color-23);
+  font-size: 13px;
+}
+
+.privacy__policy span:hover {
+  color: var(--mirabel-color-31);
+  cursor: pointer;
+}
+
+.container_sec {
+  width: 83%;
+  margin: 0 auto;
+}
+
+/* media query for home section */
+
+@media (max-width: 900px) {
+  /* .signup {
+    max-height: 800px;
+  } */
+
+  .container_sec {
+    width: 83%;
+    margin: 0 auto;
+  }
+
+  /* .form {
+    width: 100%;
+  } */
+  /* 
+  .signup_container {
+    padding-top: 15rem;
+    width: 50%;
+  } */
+
+  .signup_container img {
+    width: 18rem;
+    /* margin-top: 3rem; */
+  }
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .signup {
+    max-height: 800px;
+    display: flex;
+    gap: 0;
+  }
+
+  .container_sec {
+    width: 83%;
+    margin: 0 auto;
+  }
+  /* 
+  .form {
+    width: 100%;
+  }
+ */
+  /*  .signup_container {
+    padding-top: 15rem;
+  }
+  html {
+    font-size: 100%;
+  } */
+}
